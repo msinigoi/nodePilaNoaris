@@ -27,7 +27,7 @@ app.get("/ok/:name", async (request, response) => {
         }
       }
     });
-    return response.status(200).send("ok done");
+    return response.status(200).send(name + " added");
   } catch (error) {
     response.status(500).send(error);
   }
